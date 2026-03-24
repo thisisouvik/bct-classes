@@ -27,7 +27,6 @@ body {
 
 .btn-primary {
   background-color: #0a58ca !important;
-  border: none;
 }
 
 .nav-link:hover {
@@ -69,4 +68,57 @@ p {
   background-color: #0a58ca !important;
   border: none;
   color: #fff !important;
+}
+
+.margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.border2 {
+    border: 3px solid #0a5dca;
+}
+
+.hero-row-section {
+  background: linear-gradient(135deg, #eef4ff, #ffffff);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.hero-image {
+  max-height: 380px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.footer-gallery {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer-gallery img {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .hero-row-section {
+    padding: 20px;
+  }
+
+  .footer-gallery {
+    justify-content: flex-start;
+  }
 }

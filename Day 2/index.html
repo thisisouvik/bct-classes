@@ -10,45 +10,143 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Day 2</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary head-section">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Project</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Technologia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section class="container margin hero-row-section">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-primary mb-3">Learn Web Design Faster</h1>
+          <p class="mb-4">
+            Build practical layouts with modern structure, clear spacing, and responsive sections.
+            This row layout keeps content and visuals balanced on every screen size.
+          </p>
+          <a href="#gallery" class="btn btn-primary btn-lg">Explore Sections</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/Hero.jpeg" class="img-fluid rounded-3 shadow-sm hero-image" alt="Hero image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container margin">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Column Layout Section</h2>
+        <p class="mb-0">A clean grid using your assets images.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card h-100 border2 shadow-sm image-card">
+            <img src="assets/Content.jpeg" class="card-img-top" alt="Content image" />  
+            <div class="card-body">
+              <h5 class="card-title">Content Design</h5>
+              <p class="card-text">Well-structured blocks make websites easier to read and navigate.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100 border2 shadow-sm image-card">
+            <img src="assets/WhatsApp Image 2026-03-24 at 4.39.32 PM.jpeg" class="card-img-top" alt="Gallery image one" />
+            <div class="card-body">
+              <h5 class="card-title">Responsive Spacing</h5>
+              <p class="card-text">Rows and columns adapt naturally across desktop, tablet, and mobile.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100 border2 shadow-sm image-card">
+            <img src="assets/WhatsApp Image 2026-03-24 at 4.39.33 PM (2).jpeg" class="card-img-top" alt="Gallery image two" />
+            <div class="card-body">
+              <h5 class="card-title">Visual Hierarchy</h5>
+              <p class="card-text">Use image, title, and text order to guide users through information.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section py-5 mt-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <h4 class="mb-2">Technologia</h4>
+            <p class="mb-0">Created for Day 2 class practice with row, column, and footer sections.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-gallery">
+              <img src="assets/WhatsApp Image 2026-03-24 at 4.39.31 PM (1).jpeg" alt="Footer thumb one" />
+              <img src="assets/WhatsApp Image 2026-03-24 at 4.39.33 PM.jpeg" alt="Footer thumb two" />
+              <img src="assets/WhatsApp Image 2026-03-24 at 4.39.32 PM (1).jpeg" alt="Footer thumb three" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
