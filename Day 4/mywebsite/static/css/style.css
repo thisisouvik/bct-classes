@@ -1,0 +1,124 @@
+* {
+  --primary-color: #3498db;
+}
+
+body {
+  color: #555; /* Steel Gray */
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.nav-link {
+  font-size: 18px !important;
+  font-weight: 500;
+}
+
+.head-section {
+  background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+}
+
+.navbar-brand,
+.text-primary {
+  color: #0a58ca !important;
+}
+
+.btn-primary {
+  background-color: #0a58ca !important;
+}
+
+.nav-link:hover {
+  color: #0a58ca;
+}
+
+p {
+  font-size: 18px;
+}
+.btn-primary:hover {
+  background-color: #257dfd !important;
+}
+
+.blue-bg {
+  background-color: #0a58ca;
+  color: #fff;
+}
+
+.ionicons {
+  color: #0a58ca;
+  background-color: #f2f2f2;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 12px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .active {
+  background-color: #0a58ca !important;
+  border: none;
+  color: #fff !important;
+}
+
+.footer-section {
+  background-color: #0a58ca !important;
+  border: none;
+  color: #fff !important;
+}
+
+.margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.border2 {
+    border: 3px solid #0a5dca;
+}
+
+.hero-row-section {
+  background: linear-gradient(135deg, #eef4ff, #ffffff);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.hero-image {
+  max-height: 380px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.footer-gallery {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer-gallery img {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .hero-row-section {
+    padding: 20px;
+  }
+
+  .footer-gallery {
+    justify-content: flex-start;
+  }
+}
