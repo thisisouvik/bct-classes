@@ -32,10 +32,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link {% if active_page == 'home' %}active{% endif %}" {% if active_page == 'home' %}aria-current="page"{% endif %} href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link {% if active_page == 'products' %}active{% endif %}" {% if active_page == 'products' %}aria-current="page"{% endif %} href="{% url 'newapp-products' %}">Products</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -82,7 +82,7 @@
             Build practical layouts with modern structure, clear spacing, and responsive sections.
             This row layout keeps content and visuals balanced on every screen size.
           </p>
-          <a href="#gallery" class="btn btn-primary btn-lg">Explore Sections</a>
+          <a href="{% url 'newapp-products' %}" class="btn btn-primary btn-lg">Explore Products</a>
         </div>
         <div class="col-lg-6">
           <img src="{% static 'assets/Hero.jpeg' %}" class="img-fluid rounded-3 shadow-sm hero-image" alt="Hero image" />
@@ -90,18 +90,18 @@
       </div>
     </section>
 
-    <section id="gallery" class="container margin">
+    <section class="container margin">
       <div class="text-center mb-4">
-        <h2 class="fw-bold">Column Layout Section</h2>
-        <p class="mb-0">A clean grid using your assets images.</p>
+        <h2 class="fw-bold">Featured Preview</h2>
+        <p class="mb-0">Visit the new product page to see the full collection.</p>
       </div>
       <div class="row g-4">
         <div class="col-md-4">
           <article class="card h-100 border2 shadow-sm image-card">
             <img src="{% static 'assets/Content.jpeg' %}" class="card-img-top" alt="Content image" />  
             <div class="card-body">
-              <h5 class="card-title">Content Design</h5>
-              <p class="card-text">Well-structured blocks make websites easier to read and navigate.</p>
+              <h5 class="card-title">Smart Design</h5>
+              <p class="card-text">Clean product presentation with image-first storytelling.</p>
             </div>
           </article>
         </div>
@@ -109,8 +109,8 @@
           <article class="card h-100 border2 shadow-sm image-card">
             <img src="{% static 'assets/WhatsApp Image 2026-03-24 at 4.39.32 PM.jpeg' %}" class="card-img-top" alt="Gallery image one" />
             <div class="card-body">
-              <h5 class="card-title">Responsive Spacing</h5>
-              <p class="card-text">Rows and columns adapt naturally across desktop, tablet, and mobile.</p>
+              <h5 class="card-title">Clear Details</h5>
+              <p class="card-text">Each card gives concise information for faster browsing.</p>
             </div>
           </article>
         </div>
@@ -118,11 +118,14 @@
           <article class="card h-100 border2 shadow-sm image-card">
             <img src="{% static 'assets/WhatsApp Image 2026-03-24 at 4.39.33 PM (2).jpeg' %}" class="card-img-top" alt="Gallery image two" />
             <div class="card-body">
-              <h5 class="card-title">Visual Hierarchy</h5>
-              <p class="card-text">Use image, title, and text order to guide users through information.</p>
+              <h5 class="card-title">Product Focus</h5>
+              <p class="card-text">Explore the dedicated product page for the complete list.</p>
             </div>
           </article>
         </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="{% url 'newapp-products' %}" class="btn btn-primary">Go To Product Page</a>
       </div>
     </section>
 
